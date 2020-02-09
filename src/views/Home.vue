@@ -8,7 +8,7 @@
         </div>
         <div v-for="(transcript, index) in transcripts" class="slide" :key="index">
           <h1>{{transcript.title}}</h1>
-          <ChatShow :messages="transcript.messages "/>
+          <ChatShow :transcript="transcript.messages "/>
         </div>
       </div>
     </FullPage>
