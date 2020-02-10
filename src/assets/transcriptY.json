@@ -1,0 +1,369 @@
+{
+  "title": "a counselor",
+  "messages": [
+    {
+      "text": "this february, twenty twenty, what's top of mind?",
+      "host": true,
+      "time": "2020-02-10T13:33:40.000Z"
+    },
+    {
+      "text": "nCoV by far.",
+      "host": false,
+      "time": "2020-02-10T13:33:54.000Z"
+    },
+    {
+      "text": "It’s all anyone can talk about these days.",
+      "host": false,
+      "time": "2020-02-10T13:34:10.000Z"
+    },
+    {
+      "text": "this panic in the populace, is it justified?",
+      "host": true,
+      "time": "2020-02-10T13:34:33.000Z"
+    },
+    {
+      "text": "I think it’s justified considering how many cases of infection had occurred over the timespan of the past month let’s say.",
+      "host": false,
+      "time": "2020-02-10T13:35:13.000Z"
+    },
+    {
+      "text": "It’s already far more infectious than SARS. And it’s easy for people to draw that comparison considering it’s place of origin, the symptoms, and widespread panic around the world.",
+      "host": false,
+      "time": "2020-02-10T13:35:45.000Z"
+    },
+    {
+      "text": "But when you look closely into the mortality rate, as least for clinical cases, it’s currently significantly less severe than SARS.",
+      "host": false,
+      "time": "2020-02-10T13:36:20.000Z"
+    },
+    {
+      "text": "In a way, it’s more comparable to Swine flu in that sense.",
+      "host": false,
+      "time": "2020-02-10T13:36:38.000Z"
+    },
+    {
+      "text": "But there’s been a general distrust towards the CCP, towards China, towards how the pandemic has been handled, not only in Hong Kong and around the world, but also in China too.",
+      "host": false,
+      "time": "2020-02-10T13:37:09.000Z"
+    },
+    {
+      "text": "And I think it’s the sense of feeling as though something is being kept from you, and that the authorities are not nearly as capable of handling the situation as they claim they are, that’s causing much of this panic.",
+      "host": false,
+      "time": "2020-02-10T13:37:42.000Z"
+    },
+    {
+      "text": "So on it’s own, the disease of course warrants heightened concern, but the hysteria that we’re seeing I feel as though was exacerbated by sociopolitical factors.",
+      "host": false,
+      "time": "2020-02-10T13:38:55.000Z"
+    },
+    {
+      "text": "had the Chief Executive not tabled the extradition bill, set off this period of social unrest, eroded trust in the government to virtually nil, would we be in a different place facing this crisis?",
+      "host": true,
+      "time": "2020-02-10T13:40:07.000Z"
+    },
+    {
+      "text": "I believe so.",
+      "host": false,
+      "time": "2020-02-10T13:40:31.000Z"
+    },
+    {
+      "text": "Whilst not significantly different, I would like to think that at least the public wouldn’t be in a state of panic as we’re seeing now.",
+      "host": false,
+      "time": "2020-02-10T13:41:07.000Z"
+    },
+    {
+      "text": "The extradition bill had exposed Carrie Lam’s cabinet as completely out of touch and unable to consider the welfare of its people above political ass licking.",
+      "host": false,
+      "time": "2020-02-10T13:41:58.000Z"
+    },
+    {
+      "text": "In a way, this sentiment had carried forward into the current pandemic, with the way that mainlanders were being let in to Hong Kong no holds barred for a good amount of time before any border control happened, the unexplainable masks shortage despite the CSI being able to produce their own in Hong Kong, the various policies that have been made such that mainlanders are almost encouraged to come to Hong Kong for healthcare services.",
+      "host": false,
+      "time": "2020-02-10T13:43:43.000Z"
+    },
+    {
+      "text": "All this is feeding towards the idea that Hong Kong citizens are no longer a factor of consideration for its government. But rather the government is only interested in feeding the needs of the CCP and kowtowing to whatever it demands.",
+      "host": false,
+      "time": "2020-02-10T13:44:24.000Z"
+    },
+    {
+      "text": "While we would’ve known eventually even if the extradition bill not happened, what it effectively did was it awoken a lot of politically unaware youths and young adults.",
+      "host": false,
+      "time": "2020-02-10T13:45:53.000Z"
+    },
+    {
+      "text": "And because of this, they’ve become a lot more outspoken and a lot more proactive in questioning the government’s decisions, it’s authority, and its interests.",
+      "host": false,
+      "time": "2020-02-10T13:46:57.000Z"
+    },
+    {
+      "text": "how is the student body faring under the storm?",
+      "host": true,
+      "time": "2020-02-10T13:47:26.000Z"
+    },
+    {
+      "text": "Very badly I’m afraid.",
+      "host": false,
+      "time": "2020-02-10T13:47:59.000Z"
+    },
+    {
+      "text": "We’re talking about an entire generation of students who had their youths scarred but not only political unrest but also a pandemic so close to home back to back.",
+      "host": false,
+      "time": "2020-02-10T13:48:27.000Z"
+    },
+    {
+      "text": "Dare I say they’ve lost any semblance of a normal academic life this year. Classes had been suspended since November, and we were barely one week into the new semester when the class suspension happened again because of this outbreak.",
+      "host": false,
+      "time": "2020-02-10T13:49:15.000Z"
+    },
+    {
+      "text": "From the full time students I had spoken to, many have gone home either in Hong Kong or their home country abroad, and quite the university dormitories for the year since there was no point in being around anymore.",
+      "host": false,
+      "time": "2020-02-10T13:50:11.000Z"
+    },
+    {
+      "text": "Universities are trying to run the semester online, but most teaching departments are under equipped, and naturally teaching quality would suffer.",
+      "host": false,
+      "time": "2020-02-10T13:50:40.000Z"
+    },
+    {
+      "text": "And that’s just since the nCoV outbreak.",
+      "host": false,
+      "time": "2020-02-10T13:51:12.000Z"
+    },
+    {
+      "text": "Another thing that worries me is the segregation between the mainland Chinese and other students in Hong Kong.",
+      "host": false,
+      "time": "2020-02-10T13:51:39.000Z"
+    },
+    {
+      "text": "From what I’ve seen, a lot of local students are effectively treating mainland students as dirt, defaulting them as diseased individuals and going as far as to say they should be kept out of all university premises regardless.",
+      "host": false,
+      "time": "2020-02-10T13:52:18.000Z"
+    },
+    {
+      "text": "And while I understand that a certain extent of emotional panic is driving this seemingly xenophobic behavior, dare I say it’s been deeply seeded months ago, but is just being triggered now as they can justify it as means of public health.",
+      "host": false,
+      "time": "2020-02-10T13:53:05.000Z"
+    },
+    {
+      "text": "At the end of the day, yes mainlanders returning have an increased risk, but what some people are doing now is going out of their way to make the mainlanders feel unwanted.",
+      "host": false,
+      "time": "2020-02-10T13:54:07.000Z"
+    },
+    {
+      "text": "Worsened by the fact that this sentiment has been simmering since last June until now.",
+      "host": false,
+      "time": "2020-02-10T13:54:30.000Z"
+    },
+    {
+      "text": "but the term \"locust\" to describe mainlanders has been around for years. to what extent have localist sentiment evolved?",
+      "host": true,
+      "time": "2020-02-10T13:55:30.000Z"
+    },
+    {
+      "text": "It’s a lot more widespread of a sentiment now for sure.",
+      "host": false,
+      "time": "2020-02-10T13:55:51.000Z"
+    },
+    {
+      "text": "Rather than to day it has evolved per se, I tend to think it has expanded rather.",
+      "host": false,
+      "time": "2020-02-10T13:56:18.000Z"
+    },
+    {
+      "text": "The sentiment has remained pretty much the same over the years - that they’re here to erode our resources, consume the benefits of the city before they eventually takeover, leaving locals with nothing. Or at least that’s the nightmare scenario that they’re trying to drive.",
+      "host": false,
+      "time": "2020-02-10T13:57:22.000Z"
+    },
+    {
+      "text": "Since this June, I think it’d be fair to say that those who feel this way about mainlanders have increased tenfolds if not more.",
+      "host": false,
+      "time": "2020-02-10T13:57:53.000Z"
+    },
+    {
+      "text": "Part of this is because of this longstanding separation of us versus them: for the longest time locals have seen themselves as more cultured, more refined, perhaps even superior to the mainlanders.",
+      "host": false,
+      "time": "2020-02-10T13:58:39.000Z"
+    },
+    {
+      "text": "And I think this anger towards the government and to the CCP has seeped into the localist sentiment and manifested in a way where all mainlanders are seen as a threat to the collective “us”.",
+      "host": false,
+      "time": "2020-02-10T13:59:36.000Z"
+    },
+    {
+      "host": true,
+      "time": "2020-02-10T14:00:37.000Z"
+    },
+    {
+      "text": "I’d like to think that in cases like these, the anger may have been misplaced. They can’t seem to separate their dislike for the CCP and their relationship with mainlanders - they’re lumped together as one.",
+      "host": false,
+      "time": "2020-02-10T14:01:04.000Z"
+    },
+    {
+      "text": "Sure, there are those who come from underdeveloped parts of China that can’t seem to obey social mores in Hong Kong, but the same can be said for locals too.",
+      "host": false,
+      "time": "2020-02-10T14:01:49.000Z"
+    },
+    {
+      "text": "But because the concept of mainlanders in localist groups are so entrenched in the idea of the CCP, the dictatorship, the lack of free speech, corruption etc. - they see their approach to Hong Kong as a physical manifestation of the city’s ideals being eroded by the mainland.",
+      "host": false,
+      "time": "2020-02-10T14:03:28.000Z"
+    },
+    {
+      "text": "who is \"us\", and what does it mean to be a Hongkonger today? has the term grown to be more inclusive?",
+      "host": true,
+      "time": "2020-02-10T14:03:41.000Z"
+    },
+    {
+      "text": "I think opposite - the term has grown far less inclusive.",
+      "host": false,
+      "time": "2020-02-10T14:04:35.000Z"
+    },
+    {
+      "text": "Take the blue ribbons and yellow ribbons scenario.",
+      "host": false,
+      "time": "2020-02-10T14:04:46.000Z"
+    },
+    {
+      "text": "Both sides believe they’re defending the ideals of Hong Kong, and that they’re acting in the city’s best interest.",
+      "host": false,
+      "time": "2020-02-10T14:05:09.000Z"
+    },
+    {
+      "text": "But really it’s more indicative of the evolving and increasingly divisive senses of priority amongst the people.",
+      "host": false,
+      "time": "2020-02-10T14:05:30.000Z"
+    },
+    {
+      "text": "The blue ribbons value stability, connection with the motherland, having the blessings of the central administration for a good peaceful stable life let’s say.",
+      "host": false,
+      "time": "2020-02-10T14:06:02.000Z"
+    },
+    {
+      "text": "But the yellow ribbons think that this comes at a price of freedom of speech, freedom of thought, a just legislative system, a city where camaraderie is placed above gains in wealth - and these are all relatively more progressive values that they identify with.",
+      "host": false,
+      "time": "2020-02-10T14:07:50.000Z"
+    },
+    {
+      "text": "So by my referring to “us”, I really just mean those who align themselves as sympathetic of the localist movement, or even staunch supporters of it.",
+      "host": false,
+      "time": "2020-02-10T14:08:22.000Z"
+    },
+    {
+      "text": "Those who don’t see themselves as Chinese, an identity carved out and defined by the CCP. That’s why they’re so driven to define themselves as Hong Kongers - to separates themselves from that narrative",
+      "host": false,
+      "time": "2020-02-10T14:09:35.000Z"
+    },
+    {
+      "text": "is there a path towards reconciliation?",
+      "host": true,
+      "time": "2020-02-10T14:09:55.000Z"
+    },
+    {
+      "text": "It’ll be a thankless task for whoever intends to initiate it, to say the least.",
+      "host": false,
+      "time": "2020-02-10T14:10:45.000Z"
+    },
+    {
+      "text": "I would like to think that with a more sympathetic administration that’s savvy enough to facilitate more friendly policies for local Hong Kongers, while at the same time answering to the interests of Beijing - that may be the way to go.",
+      "host": false,
+      "time": "2020-02-10T14:11:51.000Z"
+    },
+    {
+      "text": "The Hong Kong government needs someone at helm who’s politically aware enough to not piss off either side, have them slowly play nice with one another, and then MAYBE create an environment where no one from either side wants to bite each other’s head off.",
+      "host": false,
+      "time": "2020-02-10T14:12:41.000Z"
+    },
+    {
+      "text": "I find it really interesting how, in the beginning of say 2018, a lot of younger locals had begun visiting Shenzhen for recreation and fun over the weekends.",
+      "host": false,
+      "time": "2020-02-10T14:13:18.000Z"
+    },
+    {
+      "text": "My deadass wouldn’t have been caught anywhere near Shenzhen a decade ago and yet there I was going across the border every other week for heytea, for bookstores, cute boutique shops etc",
+      "host": false,
+      "time": "2020-02-10T14:13:57.000Z"
+    },
+    {
+      "text": "For a good while, the image of China in the mass population’s mind was that of Alipay, Taobao, the sheer convenience of it and how much more advanced they are compared to us.",
+      "host": false,
+      "time": "2020-02-10T14:14:44.000Z"
+    },
+    {
+      "text": "These are all facets of China’s development that bodes well with Hong Kong - because at the most superficial level it doesn’t contradict the way of life for Hong Kongers.",
+      "host": false,
+      "time": "2020-02-10T14:15:16.000Z"
+    },
+    {
+      "text": "Being liable of being sent away to an untrustworthy judicial system, being thrown the responsibility of having to take care of sick mainlanders, China’s tightening grip on the autonomy of Hong Kong - these dont bode well with the people of the city.",
+      "host": false,
+      "time": "2020-02-10T14:16:12.000Z"
+    },
+    {
+      "text": "Truth the matter is, I don’t think there will never be true autonomy in Hong Kong, so as long as 2047 remains a done deal. Either way, China’s gonna get their grubby little hands on the city.",
+      "host": false,
+      "time": "2020-02-10T14:16:57.000Z"
+    },
+    {
+      "text": "But if the HK administration can at least make it an easier pill to swallow, that might just be the first step to so called reconciliation.",
+      "host": false,
+      "time": "2020-02-10T14:17:28.000Z"
+    },
+    {
+      "text": "I mean it’s all fucked now with the extradition bill and nCoV; they’ve literally undone almost a decade worth of progress.",
+      "host": false,
+      "time": "2020-02-10T14:17:51.000Z"
+    },
+    {
+      "text": "any tips for keeping a level head when it seems all the world is crumbling down?",
+      "host": true,
+      "time": "2020-02-10T14:19:00.000Z"
+    },
+    {
+      "text": "* I don’t think there will ever be true autonomy. Sorry typo.",
+      "host": false,
+      "time": "2020-02-10T14:19:04.000Z"
+    },
+    {
+      "text": "// no worries will edit the transcript for clarity",
+      "host": true,
+      "time": "2020-02-10T14:19:30.000Z"
+    },
+    {
+      "text": "Haha I don’t know if I’m in any position to offer advice to keep a level head considering I’m barely keeping it together these days.",
+      "host": false,
+      "time": "2020-02-10T14:19:33.000Z"
+    },
+    {
+      "text": "I think keeping a level head is more about just filtering the information that you get fed these days.",
+      "host": false,
+      "time": "2020-02-10T14:20:23.000Z"
+    },
+    {
+      "text": "We’re so over saturated with information and intel left to right that sometimes I don’t think we even know what to feel anymore. One day you’re being told a conspiracy by the CCP, next day you’re being told this conspiracy is spearheaded by the local government......",
+      "host": false,
+      "time": "2020-02-10T14:21:14.000Z"
+    },
+    {
+      "text": "It sucks to say but, what the fuck can we do about it. The games that are being played here are not ones that we are able to participate in or even begin to understand.",
+      "host": false,
+      "time": "2020-02-10T14:21:52.000Z"
+    },
+    {
+      "text": "So, for keeping a level head, I’d say it helps to look at things happening and around you and try to understand why it’s happening. If you spot a connection, good, you’re able to logically explain it away and that’s one less thing for you to dwell on.",
+      "host": false,
+      "time": "2020-02-10T14:22:51.000Z"
+    },
+    {
+      "text": "If you don’t, seek clarity and research to the extent that if it no longer gives you any new information and you’re just burying yourself in an info dump, withdraw from that situation and move on.",
+      "host": false,
+      "time": "2020-02-10T14:23:40.000Z"
+    },
+    {
+      "text": "It’s not gonna help you nor anyone else dwelling on things we can’t control or don’t have the means of understanding.",
+      "host": false,
+      "time": "2020-02-10T14:24:02.000Z"
+    }
+  ]
+}
