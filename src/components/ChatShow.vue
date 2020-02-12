@@ -1,6 +1,5 @@
 <template>
   <div class="chat">
-    <button v-on:click="messageIterator">test</button>
     <div v-for="message in messages" :key="message.time" v-show="message.show" >
         <div v-if="message.host" class="host message">
             <p>{{message.text}}</p>
@@ -36,7 +35,7 @@ export default {
   },
   mounted() {
     if (!this.transcript[0].show) {
-        this.messages = this.transcript.map(message=> ({ ...message, show: false }))       
+        this.messages = this.transcript.map(message=> ({ ...message, show: true }))       
     }
     // this.messageIterator()
   },
@@ -53,6 +52,7 @@ export default {
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .message {
