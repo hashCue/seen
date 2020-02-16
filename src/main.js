@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import FullPage from 'vue-fullpage.js/src/FullPage.vue'
 import 'fullpage.js/vendors/scrolloverflow'
+import FullPage from 'vue-fullpage.js/src/FullPage.vue'
 
 
 Vue.use(FullPage)

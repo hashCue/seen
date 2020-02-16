@@ -1,105 +1,103 @@
 <template>
   <div class="home">
     <FullPage :options="options" id="fullpage">
-        <div v-for="(item, type, index) in playlist" :class="type + ' section'" :key="index">
-          <article v-if="item.illustration">
-            <p>illustration</p>
-          </article>
-          <article v-if="item.mixtape">
-            <div class="slide">
-              <h1>mixtape 00{{item.issue}}</h1>
-              <h2>{{item.title}}</h2>
-            </div>
-            <div v-for="(transcript, index) in item.transcripts" class="slide" :key="'transcript'+item.issue+index">
-              <h1>{{transcript.title}}</h1>
-              <ChatShow :transcript="transcript.messages"/>
-            </div>
-          </article>
+      <div v-for="(edition, index) in playlist" class="section" :key="'edition ' + index">
+        <div class="title slide">
+          <img class="cover image" src="@/assets/mixtape1.jpg"/>
+          <h1>{{edition.title}}</h1>
         </div>
-
-        <!-- <div :bind="mixtapes[0] in mixtapes" class="mixtape section" :id="'mixtape' + mixtape.issue">
-          <div class="title slide">
-            <h1>mixtape 00{{mixtape.issue}}</h1>
-            <h2>{{mixtape.title}}</h2>
+        <div v-for="(poem, index) in shuffledPlaylist(edition.poems)" class="slide" :key="'poem ' + index">
+          <h1>{{poem.title}}</h1>
+          <h2>by {{poem.author}}</h2>
+          <div v-for="(verse, index) in poem.text" class="verse" :key="'verse ' + index">
+            <p v-for="(line, index) in verse" class="line" :key="'line ' + index">
+              {{line}}
+            </p>
           </div>
-          <div v-for="(transcript, index) in mixtape.transcripts" class="slide" :key="'transcript'+mixtape.issue+index">
-            <h1>{{transcript.title}}</h1>
-            <ChatShow :transcript="transcript.messages "/>            
-          </div>
-        </div> -->
+        </div>
+      </div>
     </FullPage>
-
-
   </div>
-
-
-
-
-
 </template>
 
 
 
 <script>
-import ChatShow from '@/components/ChatShow.vue'
-import FullPage from 'vue-fullpage.js/src/FullPage.vue'; 
+// import Mixtape from '@/components/Mixtape.vue'
 import 'fullpage.js/vendors/scrolloverflow'
+import FullPage from 'vue-fullpage.js/src/FullPage.vue'
 
-import transcript1 from '@/assets/transcriptA.json'
-import transcript2 from '@/assets/transcriptH.json'
-import transcript3 from '@/assets/transcriptC.json' 
-import transcript4 from '@/assets/transcriptY.json'
-
-// hmm tricky
-// have to abstract
+import Edition from '@/assets/mixtape.json'
 
 export default {
   name: 'home',
   components: {
-    ChatShow,
     FullPage
+  },
+  methods: {
+    shuffledPlaylist: (...poetry) => {
+
+      const shuffledPoems = []
+      let chance
+      poetry[0].forEach(poem => {
+
+        chance = (Math.random() > 0.5) ? true: false
+     
+        if (chance) {
+          shuffledPoems.unshift(poem)
+        } else {
+          shuffledPoems.push(poem)
+        }
+
+      })
+
+      return shuffledPoems
+    }
   },
   data() {
     return {
       options: {
         licenseKey: '8857DA6E-01F3472C-8AD8BF1A-CA320A28',
-        navigation: true,
+        navigation: false,
         navigationPosition: 'left',
         scrollOverflow: true,
         slidesNavigation: true,
         controlArrows: false,
       },
       playlist: [
-        {
-          illustration: true,
-          issue: 2,
-          title: 'space station blue'
-        },
-        {
-          mixtape: true,
-          issue: 2,
-          title: 'life in the time of coronavirus',
-          transcripts: [
-            transcript4
-          ]
-        },
-        {
-          illustration: true,
-          issue: 1,
-          title: 'test'
-        },
-        {
-          mixtape: true,
-          issue: 1,
-          title: 'on the issue of hong kong',
-          transcripts: [
-            transcript1,
-            transcript2,
-            transcript3,
-          ]
-        }
+        Edition
       ]
     }
   }
 }
 </script>
+
+<style scoped>
+  
+  @import url("https://use.typekit.net/fcr0yqy.css");
+  .cover {
+    margin-top: 100px;
+    width: 375px;
+    margin-bottom: -150px;
+  }
+  .title {
+    font-family: stratos, helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 4em;
+    color: rgb(191,45,40, 0.9);
+  }
+
+  h2 {
+    margin-bottom: 4em;
+  }
+
+  .poem {
+    width: 80%; 
+  }
+  
+  .verse {
+    margin-bottom: 4em;
+  }
+
+</style>
