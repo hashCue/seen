@@ -5,6 +5,7 @@
         {
             "title": "ten o'clock shouts",
             "author": "3737",
+            "slug": "shouts",
             "date": "december",
             "text": [
                 [
@@ -56,6 +57,7 @@
         {
             "title": "when a home breaks down",
             "author": 9594,
+            "slug": "home",
             "date": "november",
             "text": [
                 [
@@ -80,6 +82,7 @@
         {
             "title": "rebellion and the reason to be angry",
             "author": 6286,
+            "slug": "rebellion",
             "text": [
                 [
                     "to know that you were taking us for fools",
@@ -105,6 +108,7 @@
         {
             "title": "mask",
             "author": "2305",
+            "slug": "mask",
             "text": [
                 [
                     "the mask I wear",
@@ -151,13 +155,15 @@
         {
             "title": "the bystanders",
             "author": "0572",
+            "slug": "bystanders",
             "text": [
                 [
                     "Ⅰ",
                     "it’s strange how outwardly we thrive,",
                     "while beyond us something swells like ",
                     "sea-wind on blackened, raging waves;",
-                    "and strangled cries fight extractor fans and slow exhaling rice."
+                    "and strangled cries fight extractor fans",
+                    "and slow exhaling rice."
                 ],
                 [
                     "Ⅱ",
@@ -205,6 +211,7 @@
         {
             "title": "capitalist hangover",
             "author": "3339",
+            "slug": "capitalist-hangover",
             "text": [
                 [
                     "with white face",
@@ -255,6 +262,7 @@
         {
             "title": "aggressive fruit",
             "author": "3339",
+            "slug": "aggressive-fruit",
             "text": [
                 [
                     "jets of blue",
@@ -302,6 +310,7 @@
         {
             "title": "boiling frog",
             "author": "3737",
+            "slug": "boiling-frog",
             "text": [
                 [
                     "a million people took to the streets today",
@@ -427,6 +436,7 @@
         {
             "title": "day in the life of",
             "author": "4630",
+            "slug": "day",
             "text": [
                 [
                     "you forget what fresh air tasted like",
@@ -469,6 +479,7 @@
         {
             "title": "love and hate",
             "author": 7823,
+            "slug": "love-hate",
             "text": [
                 [
                     "there are two great forces that live together in the center of the human heart."
