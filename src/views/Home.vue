@@ -1,60 +1,58 @@
 
 <template>
   <div class="home">
-    <FullPage :options="fullpageOptions" id="fullpage">
-      <div v-for="(edition, index) in shuffle(playlist)" class="playlist section" :key="'edition ' + index">
-      <!-- // will need to move out the shufflePlaylist up the chain of operations
-      // for now use a separate function
-      // but can refactor -->
-        <div class="title slide">
-          <img class="cover image" src="@/assets/mixtape1.jpg"/>
-          <div class="masthead">
-            <h1>{{edition.title}}</h1>
-            <h2>v{{edition.version}}</h2>
-            <div class="verse">
-              <p class="line">a collection of poetry</p>
-              <p class="line">around the time of the troubles</p>
+    <div v-for="(edition, index) in shuffle(playlist)" class="playlist" :key="'edition ' + index">
+      <FullPage ref="fullpage" :options="fullpageOptions" id="fullpage">
+        <div class="section">
+        <!-- // will need to move out the shufflePlaylist up the chain of operations
+        // for now use a separate function
+        // but can refactor -->
+          <div class="title slide">
+            <img class="cover image" src="@/assets/mixtape1.jpg"/>
+            <div class="masthead">
+              <h1>{{edition.title}}</h1>
+              <h2>v{{edition.version}}</h2>
+              <div class="verse">
+                <p class="line">a collection of anon. poetry around the time of the troubles</p>
+              </div>
+              <div class="verse">
+                <p class="line"><span class="zine">seen</span> relies on contributions from Hong Kong writers</p>
+              </div>
+              <div class="verse">
+                <p class="line">in print, <span class="zine">seen</span> is available</p>
+                <p class="line">via mail <em>(coming soon)</em></p>
+              </div> 
+              <div class="verse">
+                <p class="line">get in touch everythingisnovel@gmail.com</p>
+              </div>
             </div>
-            <div class="verse">
-              <p class="line"><span class="magazine">seen</span> relies on contributions</p>
-              <p class="line">from Hong Kong writers</p>
-            </div>
-            <div class="verse">
-              <p class="line">in print, <span class="magazine">seen</span> is available</p>
-              <p class="line">via mail (coming soon)</p>
-            </div> 
-            <div class="verse">
-              <p class="line">get in touch</p>
-              <p class="line">everythingisnovel@gmail.com</p>
-            </div>
-          </div>
-          <nav>
-            <ul>
-              <li v-for="(title, index) in listOfTitles(edition.poems)" class="link" :key="'link' + index">
-                {{title}}
-              </li>
-            </ul>
-          </nav>
+            <nav>
+              <ul id="tableOfContents">
+                <li v-for="(poem, index) in navScrub(edition.poems)" class="link" :key="'link' + index">
+                  <a @click="goTo(index)">
+                  {{poem.title}}
+                  </a>
+                </li>
+              </ul>
+            </nav>
         </div>
-        <div v-for="(poem, index) in edition.poems" class="slide" :id="poem.slug" :key="'poem ' + index">
-          <h1 class="poem">{{poem.title}}</h1>
-          <div v-for="(verse, index) in poem.text" class="poem verse" :key="'verse ' + index">
-            <p v-for="(line, index) in verse" class="line" :key="'line ' + index">
-              {{line}}
-            </p>
+          <!-- can be abstracted to a poem component -->
+          <div v-for="(poem, index) in edition.poems" class="slide" :key="'poem ' + index">
+            <h1 class="poem">{{poem.title}}</h1>
+            <div v-for="(verse, index) in poem.text" class="poem verse" :key="'verse ' + index">
+              <p v-for="(line, index) in verse" class="line" :key="'line ' + index">
+                {{line}}
+              </p>
+            </div>
+            <footer>
+              <h2>by {{poem.author}}</h2>
+            </footer>
           </div>
-          <footer>
-            <h2>by {{poem.author}}</h2>
-          </footer>
         </div>
-      </div>
-    </FullPage>
+      </FullPage>
+    </div>
   </div>
 </template>
-
-// things to add
-// submissions slide and about section
-// navigation, too
 
 
 <script>
@@ -64,59 +62,75 @@ import FullPage from 'vue-fullpage.js/src/FullPage.vue'
 
 import Edition from '@/assets/mixtape.json'
 
+
 export default {
   name: 'home',
   components: {
     FullPage
   },
   methods: {
-    shuffleList: (...poetry) => {
-      // this shuffle algo doesn't produce totally random combinations
+    shuffleList: (...poems) => {
       const shuffledPoems = []
       let chance
-      poetry.forEach(poem => {
-
-        chance = (Math.random() > 0.5) ? true: false
-     
+      poems[0].forEach(poem => {
+        chance = (Math.random() > 0.5) ? false: true
         if (chance) {
           shuffledPoems.unshift(poem)
         } else {
           shuffledPoems.push(poem)
         }
-
       })
       return shuffledPoems
     },
-    listOfTitles: (...poems) => {
-      console.log('poetry', poems) // eslint-disable-line
-      const poemTitles = [] 
-      poems.forEach((poem) => {
-        poemTitles.push(poem.title)
+    navScrub: function(...poems) {
+      let poemInfo = [] 
+      poems[0].forEach(poem => {
+          poemInfo.push({
+            title: poem.title,
+            slug: poem.slug
+          })
       })
-      return poemTitles
+      // can partition later
+      let anchors = []
+      poemInfo.forEach(poem => {
+        anchors.push(poem.slug)
+      })
+      let tooltips = ['seen']
+      poemInfo.forEach(poem => {
+        tooltips.push(poem.title)
+      })
+
+      this.fullpageOptions.navigationTooltips = tooltips;
+      return poemInfo
     },
 
-    shuffle: function(...playlist) {
-      const shuffledPlaylist = []
+    shuffle: function(playlist) {
+      let shuffledPlaylist = []
       playlist.forEach(edition => {
-        console.log('edition', edition) // eslint-disable-line
-        shuffledPlaylist.push(this.shuffleList(edition[0].poems))
+        let shuffle = {...edition}
+        shuffle.poems = this.shuffleList(edition.poems)
+        shuffledPlaylist.push(shuffle)
       })
-      console.log('shuffled', shuffledPlaylist) // eslint-disable-line
-      return shuffledPlaylist;
+      return shuffledPlaylist
+    },
+    goTo: function(index) {
+      this.$refs.fullpage[0].api.moveTo(1, index+1)
     }
   },
   data() {
     return {
       fullpageOptions: {
         licenseKey: '8857DA6E-01F3472C-8AD8BF1A-CA320A28',
-        navigation: false,
-        navigationPosition: 'left',
-        scrollOverflow: true,
         slidesNavigation: true,
+        scrollOverflow: true,
+        navigationTooltips: [],
         controlArrows: false,
         verticalCentered: false,
-        anchors: []
+        recordHistory: true,
+        showActiveTooltip: false,
+        // anchors: [],
+        // menu: "#tableOfContents",
+        // lockAnchors: true,
       },
       playlist: [
         Edition
@@ -139,27 +153,36 @@ export default {
     box-sizing: border-box;
   }
 
+ nav {
+    width: 400px;
+    align-self: center;
+  }
+
+
   .title {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content:space-around;
   }
 
-  nav {
-    width: 400px;
-  }
+ 
 
   .link {
     font-size: 1.2em;
+    margin-top: 5px;
     text-align: left;
-    list-style: none;  
+    list-style: none;
+    text-decoration-line: underline;
+    /* text-decoration-color: #2c3e50;    */
+    text-decoration-color: rgb(191,45,40, 0.9);
+
   }
   .masthead {
     width: 200px; 
     font-size: 0.7em;
   }
 
-  .masthead > h1, .link, .magazine {
+  .masthead > h1, .link, .zine {
     font-family: stratos, helvetica, sans-serif;
     font-weight: bolder;
     font-style: italic;
@@ -179,7 +202,7 @@ export default {
   .cover {
     height: 375px;
     width: 375px;
-    align-self: flex-end;
+    align-self: center;
   }
   
   h1.poem {
