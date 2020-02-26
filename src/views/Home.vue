@@ -37,13 +37,21 @@
             </nav>
         </div>
           <!-- can be abstracted to a poem component -->
+
           <div v-for="(poem, index) in edition.poems" class="slide" :key="'poem ' + index">
-            <h1 class="poem">{{poem.title}}</h1>
-            <div v-for="(verse, index) in poem.text" class="poem verse" :key="'verse ' + index">
-              <p v-for="(line, index) in verse" class="line" :key="'line ' + index">
-                {{line}}
-              </p>
+            <div v-if="poem.style === 'messages'">
+              <h1 class="poem">{{poem.title}}</h1>
+              <ChatShow :transcript="poem.messages"/>
             </div>
+            <div v-else>
+              <h1 class="poem">{{poem.title}}</h1>
+              <div v-for="(verse, index) in poem.text" class="poem verse" :key="'verse ' + index">
+                <p v-for="(line, index) in verse" class="line" :key="'line ' + index">
+                  {{line}}
+                </p>
+              </div>
+            </div>
+
             <footer>
               <h2>by {{poem.author}}</h2>
             </footer>
@@ -59,14 +67,15 @@
 // import Mixtape from '@/components/Mixtape.vue'
 import 'fullpage.js/vendors/scrolloverflow'
 import FullPage from 'vue-fullpage.js/src/FullPage.vue'
+import ChatShow from '@/components/ChatShow.vue'
 
 import Edition from '@/assets/mixtape.json'
-
 
 export default {
   name: 'home',
   components: {
-    FullPage
+    FullPage,
+    ChatShow
   },
   methods: {
     shuffleList: (...poems) => {
